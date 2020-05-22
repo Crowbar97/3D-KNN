@@ -22,6 +22,11 @@ This repository provides _Python_ implementation of _KNN_ algorithm for _point c
 --><img src="https://github.com/Crowbar97/3D-KNN/blob/master/images/cube_diffused.png" width="150"><!--
 --><img src="https://github.com/Crowbar97/3D-KNN/blob/master/images/sphere_diffused.png" width="150">
 
+## Chamfer distance
+The _Chamfer distance_ between two point cloud models _U_ and _V_ is given by the average of distances between each point _u_ in _U_, and its nearest point _v_ in _V_:
+
+> <img src="https://render.githubusercontent.com/render/math?math=d_{CD} = CD(U, V) = \frac{1}{n} \sum_{u \in U} \min_{v \in V} \bigl|u - v\bigr|">
+
 ## Results
 If we try to find closest _diffused_ model for _normal bunny_ model by running
 ```bash
